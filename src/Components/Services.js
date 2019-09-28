@@ -19,12 +19,12 @@ export default class Services extends Component {
       {
         icon: <FaShuttleVan/>,
         title: 'Free Shuttle',
-        info: 'We offer shuttle to airport and around town'
+        info: "For the convenience of our customers, we provide shuttle to airport and around town"
       },
       {
         icon: <FaBeer/>,
         title: 'Wines and Liquor',
-        info: 'When it comes to drinks, we have a collection in which you will definitely find your favorites'
+        info: 'When it comes to drinks, we have a collection from which you will definitely find your favorites'
       }
     ]
   };

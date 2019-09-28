@@ -11,7 +11,7 @@
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
   --mainTransition: all 0.3s linear;
-  --mainSpacing: 3px;
+  --mainSpacing: 2px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
@@ -317,11 +317,11 @@ h6 {
 .price-top {
   position: absolute;
   top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  right: 0;
+  background: rgba(20, 20, 20, 0.8);
   color: var(--mainWhite);
   padding: 0.3rem 0.6rem 0.5rem;
-  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
   font-size: 0.5rem;
   text-align: center;
   transition: var(--mainTransition);
@@ -443,6 +443,8 @@ h6 {
   width: 80vw;
   margin: 0 auto;
   display: grid;
+  /* The auto-fill prevents rooms from spanning across all the screen
+     if there's only one room available per say */
   grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 30px;
@@ -483,6 +485,7 @@ h6 {
 .form-control {
   width: 100%;
   background: transparent;
+  text-transform: capitalize;
   font-size: 1rem;
 }
 .size-inputs {
