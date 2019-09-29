@@ -164,13 +164,16 @@ h6 {
   align-items: center;
   justify-content: center;
 }
-.roomsHero {
+/* .roomsHero {
   background-image: url("./images/room-1.jpg");
   min-height: 60vh;
-}
+} */
 .errorHero {
-  background-image: url("./images/defaultBcg.jpg");
-  min-height: 60vh;
+  min-height: calc(100vh - 66px);
+  background: url("./images/defaultBcg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* End of Hero */
 /* Banner */
