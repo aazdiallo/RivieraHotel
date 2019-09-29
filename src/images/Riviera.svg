@@ -1,4 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" viewBox="0 0 1366 768" width="250" height="37">
+  <rect x="1" y="1" width="248" height="35" stroke="#222222" stroke-width="2"/>
   <style>
     .st1{fill:#c6dd7f}.st2{fill:#e9ddb7}.st3{fill:#a6d0e4}
   </style>
