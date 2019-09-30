@@ -35,7 +35,10 @@ class RoomProvider extends Component { // Provider object
       // get maxPrice from the highest price in room data
       let maxPrice = Math.max(...rooms.map(item => item.price));
       let maxSize = Math.max(...rooms.map(item => item.size));
-
+      if (rooms.fields.slug === 'Single-Basic')
+        {
+          rooms.fields.price = 70;
+        }
       //change the state of featured rooms
       this.setState({
         rooms,
