@@ -27,7 +27,7 @@ class RoomProvider extends Component { // Provider object
         content_type: 'rivieraHotel',
         order: 'fields.price'
       });
-      console.log(response.items);
+      // console.log(response.items);
       let rooms = this.FormatData(response.items);
       // get all featured rooms from the list of rooms grabbed from items
       // and store those rooms in the featuredRooms array.
@@ -35,10 +35,6 @@ class RoomProvider extends Component { // Provider object
       // get maxPrice from the highest price in room data
       let maxPrice = Math.max(...rooms.map(item => item.price));
       let maxSize = Math.max(...rooms.map(item => item.size));
-      if (rooms.fields.slug === 'Single-Basic')
-        {
-          rooms.fields.price = 70;
-        }
       //change the state of featured rooms
       this.setState({
         rooms,
