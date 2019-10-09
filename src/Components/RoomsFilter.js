@@ -25,7 +25,7 @@ export default function RoomsFilter({rooms}) {
   // call uniqueRoomType function to get its array content
   let roomType = uniqueCharacteristics(rooms, 'type');
   let numberOfGuests = uniqueCharacteristics (rooms, 'capacity');
-  numberOfGuests = parseInt(numberOfGuests);
+  numberOfGuests = parseInt(numberOfGuests.values);
   numberOfGuests.sort();
   // add an All option to the list of roomType array
   roomType = ['all', ...roomType];
